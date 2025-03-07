@@ -43,6 +43,7 @@ let dificuldade = [
 
         gameOver = false;
         pontuacao = 0;
+        nivel = 0;
 
         //  Adiciona o texto da pontuação no canto da tela
         pontuacaoTexto = this.add.text(0, 555, 'Pontuação: 0', { fontSize: '32px', fill: '#FFFFFF' }).setDepth(1);
@@ -147,7 +148,7 @@ let dificuldade = [
             if(pontuacao >= 600){
                 nivel = 2;
             }
-            
+
             else
             {
                 nivel = 1;
