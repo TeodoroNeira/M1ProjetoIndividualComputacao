@@ -1,0 +1,62 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8" />
+    <title>Asteroid Avoider</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.23.0/dist/phaser.js"></script>
+    <script src="scenes/menuInicial.js"></script>
+    <script src="scenes/asteroidAvoider.js"></script>
+
+    <style>
+        body {
+            margin-top: 1px;
+            padding: 0;
+        }
+
+        canvas {
+            border: 1px solid #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="game"></div>
+
+    <script type="text/javascript">
+
+    //  Configurações do Phaser
+
+        const config = {
+            type: Phaser.AUTO,
+            scale: {
+                mode: Phaser.Scale.FIT
+            },
+            autoCenter: Phaser.Scale.CENTER,
+            width: 800,
+            height: 600,
+            physics: {
+                default: 'arcade',
+                arcade: {
+                    gravity: { y: 0 },
+                    debug: false 
+                }
+            },
+            parent: "game",
+            dom:{
+               createContainer: true,
+            },
+
+            //  Adição das duas cenas do jogo
+
+            scene: [menuInicial, asteroidAvoider]
+        };
+
+        var game = new Phaser.Game(config);
+        game.scene.start('Welcome');
+    </script>
+
+</body>
+</html>
