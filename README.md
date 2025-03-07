@@ -18,7 +18,7 @@
 
   Presente nesse repositório.
 
-## Link da versão jogável (GitHub Pages): (insira aqui o link da versão jogável do seu Projeto Individual)
+## Link da versão jogável (GitHub Pages):
 
   https://teodoroneira.github.io/M1ProjetoIndividualComputacao/
 
